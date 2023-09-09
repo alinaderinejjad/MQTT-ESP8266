@@ -26,7 +26,7 @@ void setup() {
       Serial.println("Trying to Connect to WiFi..");
   }
   Serial.println("Connected to the WiFi network");
-  // MQTT Broker Connection procedure
+  // MQTT Broker Connection config procedure-Setting url,port and callback routin
   client.setServer(mqtt_broker, mqtt_port);
   client.setCallback(callback);
   while (!client.connected()) {
